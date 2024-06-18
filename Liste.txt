@@ -1,3 +1,3 @@
-Alex macht TaskManager
-Zakaria macht Task klasse
-Jason macht die kommentare und das Klassen Diagramm
+Alex macht TaskManager und jeweilige Kommentare
+Zakaria macht Task klasse und jeweilige Kommentare
+Jason macht das Klassen Diagramm zudem auch noch das Repository

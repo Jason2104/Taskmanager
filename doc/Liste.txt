@@ -1,3 +1,11 @@
-Alex macht TaskManager und jeweilige Kommentare
-Zakaria macht Task klasse und jeweilige Kommentare
-Jason macht das Klassen Diagramm zudem auch noch das Repository
+Alex:
+    -TaskManager Klasse
+    -jeweilige Kommentare
+Zakaria:
+    -Task klasse
+    -jeweilige Kommentare
+    -Ordnerstruktur
+    -Liste.txt
+Jason:
+    -Klassen Diagramm
+    -Repository erstellen

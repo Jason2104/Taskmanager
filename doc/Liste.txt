@@ -1,9 +1,8 @@
 Alex:
     -TaskManager Klasse
-    -jeweilige Kommentare
 Zakaria:
     -Task klasse
-    -jeweilige Kommentare
+    -Kommentare
     -Ordnerstruktur
     -Liste.txt
 Jason:

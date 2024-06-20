@@ -1,10 +1,10 @@
-Alex:
+Alex(anciend):
     -TaskManager Klasse
-Zakaria:
+Zakaria(Swifteridu):
     -Task klasse
     -Kommentare
     -Ordnerstruktur
     -Liste.txt
-Jason:
+Jason(Jason2104):
     -Klassen Diagramm
     -Repository erstellen

@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"TaskManager","l":"addTask(String)","url":"addTask(java.lang.String)"},{"p":"<Unnamed>","c":"TaskManager","l":"displayCompletedTasks()"},{"p":"<Unnamed>","c":"TaskManager","l":"displayTasks()"},{"p":"<Unnamed>","c":"TaskManager","l":"markTaskAsDone(int)"},{"p":"<Unnamed>","c":"TaskManager","l":"TaskManager()","url":"%3Cinit%3E()"}]

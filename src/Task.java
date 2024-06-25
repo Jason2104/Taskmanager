@@ -1,47 +1,53 @@
+/**
+ * Stellt eine Aufgabe mit einem Namen und einem Erledigungsstatus dar.
+ */
 public class Task {
-    private int id;
-    private String description;
-    private boolean completed;
+    private String name;
+    private boolean isCompleted;
 
-    // Konstruktor
-    public Task(int id, String description) {
-        this.id = id;
-        this.description = description;
-        this.completed = false;
+    /**
+     * Konstruiert eine neue Aufgabe mit dem angegebenen Namen.
+     *
+     * @param name Der Name der Aufgabe.
+     */
+    public Task(String name) {
+        this.name = name;
+        this.isCompleted = false;
     }
 
-    // Getter und Setter Methoden
-    public int getId() {
-        return id;
+    /**
+     * Gibt den Namen der Aufgabe zurück.
+     *
+     * @return Der Name der Aufgabe.
+     */
+    public String getName() {
+        return name;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    /**
+     * Setzt den Namen der Aufgabe.
+     *
+     * @param name Der neue Name der Aufgabe.
+     */
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
+    /**
+     * Gibt zurück, ob die Aufgabe erledigt ist.
+     *
+     * @return True, wenn die Aufgabe erledigt ist, sonst False.
+     */
     public boolean isCompleted() {
-        return completed;
+        return isCompleted;
     }
 
-    public void setCompleted(boolean completed) {
-        this.completed = completed;
-    }
-
-    // Methode zum Anzeigen der Aufgabe
-    @Override
-    public String toString() {
-        return "Task{" +
-                "id=" + id +
-                ", description='" + description + '\'' +
-                ", completed=" + completed +
-                '}';
+    /**
+     * Markiert die Aufgabe als erledigt oder nicht erledigt.
+     *
+     * @param isCompleted True, um die Aufgabe als erledigt zu markieren, sonst False.
+     */
+    public void setCompleted(boolean isCompleted) {
+        this.isCompleted = isCompleted;
     }
 }

@@ -1,25 +1,26 @@
-public class Main {
+/**
+ * Die Hauptklasse, die die Verwendung der Klassen TaskManager und Task demonstriert.
+ */
+public class main {
+
+    /**
+     * Der Einstiegspunkt der Anwendung.
+     *
+     * @param args Die Befehlszeilenargumente.
+     */
     public static void main(String[] args) {
-        TaskManager taskManager = new TaskManager();
+        TaskManager manager = new TaskManager();
 
-        // Aufgaben hinzufügen
-        taskManager.addTask("Alex macht TaskManager");
-        taskManager.addTask("Zakaria macht Task klasse");
-        taskManager.addTask("Jason macht die kommentare und das Klassen Diagramm");
+        Task task1 = new Task("Aufgabe 1");
+        Task task2 = new Task("Aufgabe 2");
 
-        // Aufgaben anzeigen
-        System.out.println("Alle Aufgaben:");
-        taskManager.displayTasks();
+        manager.addTask(task1);
+        manager.addTask(task2);
 
-        // Aufgabe als erledigt markieren
-        taskManager.markTaskAsDone(1);
-        taskManager.markTaskAsDone(2);
-        taskManager.markTaskAsDone(3);
+        task1.setCompleted(true);
 
-
-        // Erledigte Aufgaben anzeigen
-        System.out.println("Erledigte Aufgaben:");
-        taskManager.displayCompletedTasks();
-        
-        
-    }}
+        for (Task task : manager.getTasks()) {
+            System.out.println(task.getName() + ": " + (task.isCompleted() ? "Erledigt" : "Nicht erledigt"));
+        }
+    }
+}

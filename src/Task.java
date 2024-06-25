@@ -1,47 +1,53 @@
+/**
+ * Represents a task with a name and completion status.
+ */
 public class Task {
-    private int id;
-    private String description;
-    private boolean completed;
+    private String name;
+    private boolean isCompleted;
 
-    // Konstruktor
-    public Task(int id, String description) {
-        this.id = id;
-        this.description = description;
-        this.completed = false;
+    /**
+     * Constructs a new Task with the specified name.
+     *
+     * @param name The name of the task.
+     */
+    public Task(String name) {
+        this.name = name;
+        this.isCompleted = false;
     }
 
-    // Getter und Setter Methoden
-    public int getId() {
-        return id;
+    /**
+     * Returns the name of the task.
+     *
+     * @return The name of the task.
+     */
+    public String getName() {
+        return name;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    /**
+     * Sets the name of the task.
+     *
+     * @param name The new name of the task.
+     */
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
+    /**
+     * Returns whether the task is completed.
+     *
+     * @return True if the task is completed, false otherwise.
+     */
     public boolean isCompleted() {
-        return completed;
+        return isCompleted;
     }
 
-    public void setCompleted(boolean completed) {
-        this.completed = completed;
-    }
-
-    // Methode zum Anzeigen der Aufgabe
-    @Override
-    public String toString() {
-        return "Task{" +
-                "id=" + id +
-                ", description='" + description + '\'' +
-                ", completed=" + completed +
-                '}';
+    /**
+     * Marks the task as completed or not completed.
+     *
+     * @param isCompleted True to mark the task as completed, false to mark it as not completed.
+     */
+    public void setCompleted(boolean isCompleted) {
+        this.isCompleted = isCompleted;
     }
 }

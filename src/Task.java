@@ -1,14 +1,14 @@
 /**
- * Represents a task with a name and completion status.
+ * Stellt eine Aufgabe mit einem Namen und einem Erledigungsstatus dar.
  */
 public class Task {
     private String name;
     private boolean isCompleted;
 
     /**
-     * Constructs a new Task with the specified name.
+     * Konstruiert eine neue Aufgabe mit dem angegebenen Namen.
      *
-     * @param name The name of the task.
+     * @param name Der Name der Aufgabe.
      */
     public Task(String name) {
         this.name = name;
@@ -16,36 +16,36 @@ public class Task {
     }
 
     /**
-     * Returns the name of the task.
+     * Gibt den Namen der Aufgabe zurück.
      *
-     * @return The name of the task.
+     * @return Der Name der Aufgabe.
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Sets the name of the task.
+     * Setzt den Namen der Aufgabe.
      *
-     * @param name The new name of the task.
+     * @param name Der neue Name der Aufgabe.
      */
     public void setName(String name) {
         this.name = name;
     }
 
     /**
-     * Returns whether the task is completed.
+     * Gibt zurück, ob die Aufgabe erledigt ist.
      *
-     * @return True if the task is completed, false otherwise.
+     * @return True, wenn die Aufgabe erledigt ist, sonst False.
      */
     public boolean isCompleted() {
         return isCompleted;
     }
 
     /**
-     * Marks the task as completed or not completed.
+     * Markiert die Aufgabe als erledigt oder nicht erledigt.
      *
-     * @param isCompleted True to mark the task as completed, false to mark it as not completed.
+     * @param isCompleted True, um die Aufgabe als erledigt zu markieren, sonst False.
      */
     public void setCompleted(boolean isCompleted) {
         this.isCompleted = isCompleted;

@@ -1,18 +1,18 @@
 /**
- * The main class that demonstrates the usage of the TaskManager and Task classes.
+ * Die Hauptklasse, die die Verwendung der Klassen TaskManager und Task demonstriert.
  */
 public class main {
 
     /**
-     * The entry point of the application.
+     * Der Einstiegspunkt der Anwendung.
      *
-     * @param args The command-line arguments.
+     * @param args Die Befehlszeilenargumente.
      */
     public static void main(String[] args) {
         TaskManager manager = new TaskManager();
 
-        Task task1 = new Task("Task 1");
-        Task task2 = new Task("Task 2");
+        Task task1 = new Task("Aufgabe 1");
+        Task task2 = new Task("Aufgabe 2");
 
         manager.addTask(task1);
         manager.addTask(task2);
@@ -20,7 +20,7 @@ public class main {
         task1.setCompleted(true);
 
         for (Task task : manager.getTasks()) {
-            System.out.println(task.getName() + ": " + (task.isCompleted() ? "Completed" : "Not Completed"));
+            System.out.println(task.getName() + ": " + (task.isCompleted() ? "Erledigt" : "Nicht erledigt"));
         }
     }
 }
